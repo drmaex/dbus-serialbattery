@@ -330,6 +330,15 @@ HELTEC_MODBUS_ADDR = _get_list_from_config(
     "DEFAULT", "HELTEC_MODBUS_ADDR", lambda v: int(v)
 )
 
+# junctek_kg device settings
+JUNCTEK_DISPLAY_PRESENT = bool(config["DEFAULT"]["JUNCTEK_DISPLAY_PRESENT"])
+# fallback protection values if none are configured (default 0)
+JUNCTEK_OV_PROTECTION = int(config["DEFAULT"]["JUNCTEK_OV_PROTECTION"])
+JUNCTEK_UV_PROTECTION = float(config["DEFAULT"]["JUNCTEK_UV_PROTECTION"])
+JUNCTEK_PC_PROTECTION = float(config["DEFAULT"]["JUNCTEK_PC_PROTECTION"])
+JUNCTEK_NC_PROTECTION = float(config["DEFAULT"]["JUNCTEK_NC_PROTECTION"])
+JUNCTEK_OT_PROTECTION = int(config["DEFAULT"]["JUNCTEK_OT_PROTECTION"])
+JUNCTEK_OT_WINDOW = int(config["DEFAULT"]["JUNCTEK_OT_WINDOW"])
 
 # --------- Battery monitor specific settings ---------
 # If you are using a SmartShunt or something else as a battery monitor, the battery voltage reported
