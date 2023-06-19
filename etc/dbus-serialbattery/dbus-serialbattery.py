@@ -31,6 +31,7 @@ from bms.lifepower import Lifepower
 from bms.lltjbd import LltJbd
 from bms.renogy import Renogy
 from bms.seplos import Seplos
+from bms.junctek_kg import junctek_kg
 
 # from bms.ant import Ant
 # from bms.mnb import MNB
@@ -43,6 +44,7 @@ supported_bms_types = [
     {"bms": HeltecModbus, "baud": 9600},
     {"bms": HLPdataBMS4S, "baud": 9600},
     {"bms": Jkbms, "baud": 115200},
+    {"bms": junctek_kg, "baud": 115200},
     {"bms": Lifepower, "baud": 9600},
     {"bms": LltJbd, "baud": 9600},
     {"bms": Renogy, "baud": 9600, "address": b"\x30"},
